@@ -7,6 +7,8 @@
 [![StyleCI](https://styleci.io/repos/246765675/shield)](https://styleci.io/repos/246765675)
 [![Total Downloads](https://img.shields.io/packagist/dt/tumichnix/laravel-telegram-logger.svg?label=Downloads&style=flat-square)](https://packagist.org/packages/tumichnix/laravel-telegram-logger)
 
+---
+
 ## Installation
 
 ```bash
@@ -15,7 +17,7 @@ composer require tumichnix/laravel-telegram-logger
 
 ## Usage
 
-Add to <b>config/logging.php</b> file new channel:
+Add to `config/logging.php` file new channel:
 
 ```php
 'telegram' => [
@@ -24,7 +26,7 @@ Add to <b>config/logging.php</b> file new channel:
     'level'  => 'debug',
     'token'  => env('LOGGING_TELEGRAM_TOKEN'),
     'chat_id'=> env('LOGGING_TELEGRAM_CHAT_ID'),
-]
+],
 ```
 
 ### Testing

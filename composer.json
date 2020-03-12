@@ -4,7 +4,9 @@
   "keywords": [
     "laravel",
     "telegram",
-    "logging"
+    "logging",
+    "log",
+    "php"
   ],
   "homepage": "https://hannesdaus.de",
   "license": "MIT",

@@ -15,8 +15,16 @@ composer require tumichnix/laravel-telegram-logger
 
 ## Usage
 
+Add to <b>config/logging.php</b> file new channel:
+
 ```php
-// short usage example
+'telegram' => [
+    'driver' => 'custom',
+    'via'    => \Tumichnix\TelegramLogger\Factory::class,
+    'level'  => 'debug',
+    'token'  => env('LOGGING_TELEGRAM_TOKEN'),
+    'chat_id'=> env('LOGGING_TELEGRAM_CHAT_ID'),
+]
 ```
 
 ### Testing

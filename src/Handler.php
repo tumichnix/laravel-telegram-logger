@@ -39,7 +39,7 @@ class Handler extends AbstractProcessingHandler
                 ->get($url, [
                     'text' => $this->format($record['message'], $record['level_name'], $record['datetime']),
                     'chat_id' => $this->chatId,
-                    'parse_mode' => 'html'
+                    'parse_mode' => 'html',
                 ])
                 ->throw();
         } catch (RequestException $exception) {

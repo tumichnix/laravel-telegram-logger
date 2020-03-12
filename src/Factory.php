@@ -15,7 +15,7 @@ class Factory
                     $config['token'],
                     $config['chat_id'],
                     $config['level']
-                )
+                ),
             ]
         );
     }
